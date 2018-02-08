@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+img{max-width:100%;}
+body{
+	font-family: 'Lato', sans-serif;
+	font-size: 100%;
+	background: #ffffff;
+        text-align: center;
+        border-style: dotted; /*For debugging purposes*/
+}
+.header_nacaia{
+    border-style: solid; 
+}
+.carrusel_imatges{
+    border-style: solid;
+}
+.qui_som{
+    border-style: solid;
+}
+.contacte{
+    border-style: solid;
+}
