@@ -7,10 +7,9 @@ body{
 	font-size: 100%;
 	background: #ffffff;
     text-align: center;
-    border-style: dotted; /*For debugging purposes*/
 }
 .wrap{
-    width:70%;
+    width:100%;
 	margin: 0 auto;
 }
 .header{
@@ -21,9 +20,7 @@ body{
  }
 /******start logo********/
 .logo{
-	padding-top: 3px;
-    padding-left: 3px;
-	float: left;
+	float: none;
 }
 .logo a {
 	display: block;
@@ -31,11 +28,15 @@ body{
 /******end logo********/
 /******start-nav********/
 .nav {
-	float: right;
+	float: none;
 	vertical-align: middle;
 }
+.nav > ul {
+	padding-left: 0;
+}
 .nav > ul > li {
-  	display:inline-block;
+	width: 100%;
+	display: inline-block;
 }
 .nav > ul > li.active a {
 	color: #ffffff;
@@ -68,3 +69,53 @@ body{
 }
 
 /*Change style depending on the size of the screen*/
+
+/*By default, in little smartphones, header will be displayed every element in a different row*/
+/*@media only screen and (max-width: 640px){
+	.wrap{
+		width: 100%;
+	}
+	.logo{
+		float: none;
+		width: 100%;
+	}
+	.nav > ul > li{
+		width: 100%;
+	}
+}*/
+/*In larger smartphones, Logo on top, and all options in a row */
+@media only screen and (min-width: 641px) and (max-width: 750px){
+	.logo{
+		width: 100%;
+	}
+	.nav{
+		width: 100%;
+	}
+	.nav > ul > li {
+		width: auto;
+	}
+}
+/*In big screens, all header elemts in a single row*/
+@media only screen and (min-width: 751px){
+	.wrap{
+		width:70%;
+	}
+/******start logo********/
+	.logo{
+		padding-top: 3px;
+		padding-bottom: 3px;
+		padding-left: 3px;
+		float: left;
+	}
+/******end logo********/
+/******start-nav********/
+	.nav{
+		float: right;
+	}
+	.nav > ul{
+		padding-left: auto;
+	}
+	.nav > ul > li {
+		width: auto;
+	}
+}
