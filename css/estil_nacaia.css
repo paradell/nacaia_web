@@ -59,7 +59,19 @@ body{
 	background: #1bbc9b;
 }
 .carrusel_imatges{
-    border-style: solid;
+    height: auto;
+    max-height: 400px;
+    width: 100%;
+    overflow: hidden; /* In case the image has a ratio that excedes the container, just hide it*/
+}
+.carrusel_imatges > img {
+    display: block; /* Keep the image ratio even if the image is cropped*/
+    height: auto;
+    width: 100%;
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 .qui_som{
     border-style: solid;
