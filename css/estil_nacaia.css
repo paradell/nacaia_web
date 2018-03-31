@@ -80,6 +80,21 @@ body{
     border-style: solid;
 }
 
+/*Peu de pàgina*/
+/*--footer--*/
+.peu {
+	padding: 25px 0;
+	background: #303441;
+}
+.text_peu {
+	color: #666D89;
+	font-size: 0.8125em;
+	line-height: 1.8em;
+	text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
 /*Change style depending on the size of the screen*/
 
 /*By default, in little smartphones, header will be displayed every element in a different row*/
